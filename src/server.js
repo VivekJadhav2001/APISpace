@@ -14,7 +14,7 @@ app.use(globalResponse)
 
 
 
-app.use("/api/v1/todos",todoRouter)
+app.use("/todos",todoRouter)
 
 
 
