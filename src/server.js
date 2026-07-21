@@ -3,16 +3,18 @@ import dotenv from "dotenv"
 import connectDB from "./db/index.js"
 import { globalError, globalResponse } from "./middlewares/response.middleware.js"
 dotenv.config()
+import todoRouter from "./routes/apps/todo.routes.js"
 
 
 
 const app = express()
 connectDB()
+app.use(express.json())
 app.use(globalResponse)
 
 
 
-
+app.use("/api/v1/todos",todoRouter)
 
 
 
