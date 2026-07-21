@@ -1,0 +1,31 @@
+{
+  "name": "api_space",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivekJadhav2001/APISpace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/VivekJadhav2001/APISpace/issues"
+  },
+  "homepage": "https://github.com/VivekJadhav2001/APISpace#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.6.0",
+    "mongoose": "^9.8.0",
+    "nodemon": "^3.1.14"
+  }
+}
