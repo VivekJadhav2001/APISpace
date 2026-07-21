@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APISpace</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:center;
+padding:40px;
+}
+
+.container{
+width:900px;
+max-width:100%;
+}
+
+h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#94a3b8;
+margin-bottom:35px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+margin-bottom:25px;
+}
+
+h2{
+margin-bottom:15px;
+}
+
+.endpoint{
+display:flex;
+margin:8px 0;
+gap:15px;
+}
+
+.method{
+width:70px;
+font-weight:bold;
+}
+
+.get{color:#22c55e;}
+.post{color:#3b82f6;}
+.patch{color:#f59e0b;}
+.delete{color:#ef4444;}
+
+code{
+background:#334155;
+padding:3px 8px;
+border-radius:5px;
+}
+
+ul{
+padding-left:20px;
+line-height:2;
+}
+
+.footer{
+margin-top:30px;
+text-align:center;
+color:#94a3b8;
+}
+a{
+color:#38bdf8;
+text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 APISpace</h1>
+
+<p class="subtitle">
+Free Mock REST APIs for Developers.
+Build, prototype and test applications faster.
+</p>
+
+<div class="card">
+<h2>Base URL</h2>
+
+<code>https://apispace-rwkf.onrender.com/</code>
+
+</div>
+
+<div class="card">
+
+<h2>Todo API</h2>
+
+<div class="endpoint">
+<span class="method get">GET</span>
+<span>/todos</span>
+</div>
+
+<div class="endpoint">
+<span class="method get">GET</span>
+<span>/todos/:todoId</span>
+</div>
+
+<div class="endpoint">
+<span class="method post">POST</span>
+<span>/todos</span>
+</div>
+
+<div class="endpoint">
+<span class="method patch">PATCH</span>
+<span>/todos/:todoId</span>
+</div>
+
+<div class="endpoint">
+<span class="method patch">PATCH</span>
+<span>/todos/:todoId/toggle</span>
+</div>
+
+<div class="endpoint">
+<span class="method delete">DELETE</span>
+<span>/todos/:todoId</span>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Coming Soon</h2>
+
+<ul>
+<li>Users API</li>
+<li>Products API</li>
+<li>Posts API</li>
+<li>Comments API</li>
+<li>Authentication API</li>
+<li>Pagination</li>
+<li>Filtering</li>
+<li>Search</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Tech Stack</h2>
+
+<ul>
+<li>Node.js</li>
+<li>Express.js</li>
+<li>MongoDB</li>
+<li>Mongoose</li>
+<li>Render</li>
+</ul>
+
+</div>
+
+<div class="footer">
+Built with ❤️ by Vivek Jadhav
+</div>
+
+</div>
+
+</body>
+</html>
