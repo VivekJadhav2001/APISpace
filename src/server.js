@@ -6,6 +6,7 @@ dotenv.config()
 import todoRouter from "./routes/apps/todo.routes.js"
 import path from "path";
 import { fileURLToPath } from "url";
+import productRouter from "./routes/apps/product.route.js"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,6 +22,7 @@ app.get("/", (req, res) => {
 
 
 app.use("/todos",todoRouter)
+app.use("/products",productRouter)
 
 
 
